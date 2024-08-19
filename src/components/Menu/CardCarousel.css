@@ -1,0 +1,67 @@
+/* src/components/Menu/CardCarousel.css */
+.card-carousel {
+  overflow-x: scroll;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 0;
+  scroll-behavior: smooth;
+}
+
+.menu-item {
+  flex: 0 0 300px; /* Adjust this value to change the card width */
+  transition: transform 0.3s ease;
+}
+
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-button.left {
+  left: 1rem;
+}
+
+.scroll-button.right {
+  right: 1rem;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+}
+
+.arrow.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.arrow.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .menu-item {
+    flex: 0 0 250px;
+  }
+}

@@ -1,0 +1,18 @@
+.category {
+    background: #f0a500;
+    color: #fff;
+    padding: 0.75em 1.5em;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .category.selected {
+    background: #d18e00;
+  }
+  
+  .category:hover {
+    transform: scale(1.05);
+  }
+  
